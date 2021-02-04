@@ -16,7 +16,7 @@ You can also build the project without Eclipse CDT.
 sudo apt install git
 
 # compiler
-sudo apt install gcc-arm-none-eabi gcc gdb-multiarch automake autoconf build-essential
+sudo apt install gcc-arm-none-eabi gcc cmake g++ gdb-multiarch automake autoconf build-essential
 ```
 
 ### Building and cleaning project

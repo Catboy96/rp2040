@@ -37,11 +37,12 @@ INC_PATH   := \
 #   Makefile entry
 #######################################################################################################################
 .PHONY: all
-all:
+all:	board_all
 	${XCP_GCC} ${XCP_FLAG} ${INC_PATH} ${BOARD_FLAG} -c source/start.c -o ${OBJECT_DIR}/start.o
+	
 
 .PHONY: clean
-clean:
+clean:	board_clean
 	rm -f ${OBJECT_DIR}/*
 	rm -f ${OUTPUT_DIR}/${BOARD_ID}.*
 	
